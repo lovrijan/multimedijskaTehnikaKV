@@ -309,8 +309,16 @@
     </footer>
 
     <script>
+        const imageCache = {};
+
+
         function openMultimedia(src) {
-            document.getElementById('modalImage').src = src;
+            if (!imageCache[src]) {
+                imageCache[src] = new Image();
+                imageCache[src].src = src;
+            }
+            
+            document.getElementById('modalImage').src = imageCache[src].src;
             var myModal = new bootstrap.Modal(document.getElementById('multimediaModal'));
             myModal.show();
         }

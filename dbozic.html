@@ -217,8 +217,15 @@
     </footer>
 
     <script>
+        const imageCache = {};
+
         function openModal(src) {
-            document.getElementById('modalImage').src = src;
+            if (!imageCache[src]) {
+                imageCache[src] = new Image();
+                imageCache[src].src = src;
+            }
+            
+            document.getElementById('modalImage').src = imageCache[src].src;
             new bootstrap.Modal(document.getElementById('imageModal')).show();
         }
 
