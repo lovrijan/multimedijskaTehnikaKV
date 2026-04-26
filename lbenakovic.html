@@ -309,18 +309,18 @@
     </footer>
 
     <script>
-    const imageCache = {};
+        const imageCache = {};
 
-    function openMultimedia(src) {
-        if (!imageCache[src]) {
-            imageCache[src] = new Image();
-            imageCache[src].src = src;
+        function openMultimedia(src) {
+            if (!imageCache[src]) {
+                imageCache[src] = new Image();
+                imageCache[src].src = src;
+            }
+            
+            document.getElementById('modalImage').src = imageCache[src].src;
+            var myModal = new bootstrap.Modal(document.getElementById('multimediaModal'));
+            myModal.show();
         }
-        
-        document.getElementById('modalImage').src = imageCache[src].src;
-        var myModal = new bootstrap.Modal(document.getElementById('multimediaModal'));
-        myModal.show();
-    }
     </script>
 </body>
 </html>
