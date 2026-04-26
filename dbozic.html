@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjan Božić | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">Portfolio - Darjan Božić</a>
+                <a href="index.html" class="btn btn-outline-light btn-sm px-4">Nazad</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="portfolio-card profile-details">
+            <img src="images/db/darjan.jpg" alt="Darjan Božić" class="profile-photo" onclick="openModal(this.src)">
+            <div class="profile-info">
+                <h1>Darjan Božić</h1>
+                <p class="lead">Student 3. godine računarstva</p>
+                <p>Student 3. godine stručnog studija računarstva na FERIT-u u Osijeku. U slobodno vrijeme se bavim košarkom, kartanjem, druženjem s prijateljima te programiranjem. </p>
+                <p><a href="https://github.com/darjanb5" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/darjanbozic" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-3">Opće informacije</h2>
+                <div class="info-strip">
+                    <div class="info-chip">
+                        <span class="info-label">Datum rođenja</span>
+                        <span class="info-value">15.05.2004.</span>
+                    </div>
+                    <div class="info-chip">
+                        <span class="info-label">Mjesto rođenja</span><div></div>
+                        <span class="info-value">Đakovo, Hrvatska</span>
+                    </div>
+                    <div class="info-chip">
+                        <span class="info-label">Hobiji</span><div></div>
+                        <span class="info-value">Košarka, videoigrice</span>
+                    </div>
+                    <div class="info-chip">
+                        <span class="info-label">Jezici</span><div></div>
+                        <span class="info-value">Hrvatski, Engleski</span>
+                    </div>
+                    <div class="info-chip">
+                        <span class="info-label">Email</span>
+                        <span class="info-value"><a href="mailto:darjanbozic4@gmail.com">darjanbozic4@gmail.com</a></span>
+                    </div>
+                    <div class="info-chip">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title mb-1"><a href="ferit.unios.hr" target="_blank" class="text-decoration-none">Fakultet Elektrotehnike, računarstva i informacijskih tehnologija Osijek</a></h5>
+                                        <p class="text-muted small mb-0">Računarstvo</p>
+                                    </div>
+                                    <span class="text-muted small text-nowrap">2023. - danas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title mb-1"><a href="strukovna.com" target="_blank" class="text-decoration-none">Srednja strukovna škola Antuna Horvata, Đakovo</a></h5>
+                                        <p class="text-muted small mb-0">Tehničar za računarstvo</p>
+                                    </div>
+                                    <span class="text-muted small text-nowrap">2019. - 2023.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title mb-1"><a href="https://os-igkovacic-dj.skole.hr/ target="_blank" class="text-decoration-none" >Osnovna škola Ivan Goran Kovačić, Đakovo</a></h5>
+                                    </div>
+                                    <span class="text-muted small text-nowrap">2011. - 2019.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Vještine</h2>
+                <div class="d-flex flex-wrap gap-2 justify-content-center">
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">HTML5</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">CSS3</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">JavaScript</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">React</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">Node.js</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">PHP</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">MySQL</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">MongoDB</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">Git</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">Docker</span>
+                    <span class="badge rounded-pill bg-light text-dark border fs-6 fw-normal px-3 py-2">Linux</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Projekti</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title mb-1">E-commerce Platforma</h5>
+                                        <p class="mb-2">Full-stack web aplikacija za online prodaju s korisničkim računima, košaricom i plaćanjem.</p>
+                                        <span class="badge bg-secondary period-badge">React</span>
+                                        <span class="badge bg-secondary period-badge">Node.js</span>
+                                        <span class="badge bg-secondary period-badge">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title mb-1">Portfolio Website</h5>
+                                        <p class="mb-2">Responsive portfolio stranica s galerijom projekata i kontakt formom.</p>
+                                        <span class="badge bg-secondary period-badge">HTML5</span>
+                                        <span class="badge bg-secondary period-badge">CSS3</span>
+                                        <span class="badge bg-secondary period-badge">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Galerija</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="images/db/png.png" class="img-fluid rounded" alt="PNG" onclick="openModal(this.src)">
+                        <p class="text-center mb-0 text-muted small"><i>Slika u .png formatu</i></p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/db/jpg.jpg" class="img-fluid rounded" alt="JPG" onclick="openModal(this.src)">
+                        <p class="text-center mb-0 text-muted small"><i>Slika u .jpg formatu</i></p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/db/bmp.bmp" class="img-fluid rounded" alt="BMP" onclick="openModal(this.src)">
+                        <p class="text-center mb-0 text-muted small"><i>Slika u .bmp formatu</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Multimedijski Sadržaj</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h5>Video Prezentacija</h5>
+                        <video controls class="w-100">
+                            <source src="videos/djakovo.mp4" type="video/webm">
+                            Vaš preglednik ne podržava video element.
+                        </video>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5>Govor - Uvod</h5>
+                        <audio controls class="w-100">
+                            <source src="audio/db/intro.wav" type="audio/mpeg">
+                            Vaš preglednik ne podržava audio element.
+                        </audio>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5>Animirana Grafika</h5>
+                        <img src="images/db/animation.gif" alt="Animacija" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" class="img-fluid" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container d-flex align-items-center gap-3">
+            <img src="images/logo.png" class="footer-logo" alt="Logo">
+            <p class="mb-0">© 2026 FERIT Osijek - Multimedijska Tehnika. Sva prava zadržana.</p>
+            <span class="ms-auto">Projekt: Multimedijska tehnika - Darjan Božić</span>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('modalImage').src = src;
+            new bootstrap.Modal(document.getElementById('imageModal')).show();
+        }
+    </script>
+</body>
+</html>
