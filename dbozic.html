@@ -156,11 +156,11 @@
                 <h2 class="text-center mb-4">Galerija</h2>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <img src="images/db/png.png" class="img-fluid rounded" alt="PNG" onclick="openModal(this.src)">
+                        <img src="images/db/png-lowRes.png" class="img-fluid rounded" alt="PNG" onclick="openModal('images/db/png.png')">
                         <p class="text-center mb-0 text-muted small"><i>Slika u .png formatu</i></p>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <img src="images/db/jpg.jpg" class="img-fluid rounded" alt="JPG" onclick="openModal(this.src)">
+                        <img src="images/db/jpg-lowRes.jpg" class="img-fluid rounded" alt="JPG" onclick="openModal('images/db/jpg.jpg')">
                         <p class="text-center mb-0 text-muted small"><i>Slika u .jpg formatu</i></p>
                     </div>
                     <div class="col-md-4 mb-4">
@@ -221,6 +221,19 @@
             document.getElementById('modalImage').src = src;
             new bootstrap.Modal(document.getElementById('imageModal')).show();
         }
+
+        const imagesToPreload = [
+            'images/db/darjan.jpg',
+            'images/db/jpg.jpg',
+            'images/db/png.png',
+            'images/db/animation.gif',
+            'images/db/bmp.bmp'
+        ];
+
+        imagesToPreload.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
     </script>
 </body>
 </html>

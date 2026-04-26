@@ -219,7 +219,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 shadow-sm border-0">
                             <div class="card-body p-2">
-                                <img src="images/lb/slika1.png" class="img-fluid rounded mb-2" alt="PNG" onclick="openMultimedia(this.src)" style="cursor: pointer; height: 200px; width: 100%; object-fit: cover;">
+                                <img src="images/lb/slika1-lowRes.png" class="img-fluid rounded mb-2" alt="PNG" onclick="openMultimedia('images/lb/slika1.png')" style="cursor: pointer; height: 200px; width: 100%; object-fit: cover;">
                                 <p class="text-center mb-0 text-muted small"><i>Dizajn Music player-a u Figmi (PNG)</i></p>
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 shadow-sm border-0">
                             <div class="card-body p-2">
-                                <img src="images/lb/slika2.jpg" class="img-fluid rounded mb-2" alt="JPG" onclick="openMultimedia(this.src)" style="cursor: pointer; height: 200px; width: 100%; object-fit: cover;">
+                                <img src="images/lb/slika2-lowRes.jpg" class="img-fluid rounded mb-2" alt="JPG" onclick="openMultimedia('images/lb/slika2.jpg')" style="cursor: pointer; height: 200px; width: 100%; object-fit: cover;">
                                 <p class="text-center mb-0 text-muted small"><i>Dizajn sobe u Blenderu (JPG)</i></p>
                             </div>
                         </div>
@@ -314,6 +314,19 @@
             var myModal = new bootstrap.Modal(document.getElementById('multimediaModal'));
             myModal.show();
         }
+
+        const imagesToPreload = [
+            'images/lb/lovro1.jpg',
+            'images/lb/slika1.png',
+            'images/lb/slika2.jpg',
+            'images/lb/vinyl.gif',
+            'images/lb/lena.bmp'
+        ];
+
+        imagesToPreload.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
     </script>
 </body>
 </html>
