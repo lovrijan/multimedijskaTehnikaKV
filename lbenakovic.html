@@ -309,32 +309,18 @@
     </footer>
 
     <script>
-        const imageCache = {};
+    const imageCache = {};
 
-
-        function openMultimedia(src) {
-            if (!imageCache[src]) {
-                imageCache[src] = new Image();
-                imageCache[src].src = src;
-            }
-            
-            document.getElementById('modalImage').src = imageCache[src].src;
-            var myModal = new bootstrap.Modal(document.getElementById('multimediaModal'));
-            myModal.show();
+    function openMultimedia(src) {
+        if (!imageCache[src]) {
+            imageCache[src] = new Image();
+            imageCache[src].src = src;
         }
-
-        const imagesToPreload = [
-            'images/lb/lovro1.jpg',
-            'images/lb/slika1.png',
-            'images/lb/slika2.jpg',
-            'images/lb/vinyl.gif',
-            'images/lb/lena.bmp'
-        ];
-
-        imagesToPreload.forEach(src => {
-            const img = new Image();
-            img.src = src;
-        });
+        
+        document.getElementById('modalImage').src = imageCache[src].src;
+        var myModal = new bootstrap.Modal(document.getElementById('multimediaModal'));
+        myModal.show();
+    }
     </script>
 </body>
 </html>
