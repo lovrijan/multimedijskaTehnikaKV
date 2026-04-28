@@ -168,6 +168,11 @@ footer {
     width: auto;
 }
 
+footer a {
+    color: #94A3B8;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .portfolio-card.profile-details {
         flex-direction: column;
